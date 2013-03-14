@@ -1,64 +1,87 @@
+/* css for the project todos screen 
+ *
+ */
 
+#project-todos {
+	float: left;
+	position: relative;
+}
 
-/* css for the project todos screen */
+#project-todos.mytodos { margin-left: 0px; margin-right: 50px; }
+#project-todos.allprojects { margin-left: 0px; }
+
 #project-todos ul {
 	/*list-style-image: url(/images/sub.gif); */
-		list-style-type: none;
+	list-style-type: none;
 
 }
 #project-todos ul.root {
 	list-style-image: none;
 	list-style-type: none;
-	
 }
-#project-todos ul.root li { font-size: 1.1em; padding-bottom: 0.6em; }
-#project-todos ul.root ul.children { padding-bottom: 0px; padding-top: 0.5em;}
-#project-todos ul.root ul.children li { font-size: 0.9em; padding-bottom: 0em; padding-top: 0.0em;}
-/*#project-todos div.children { padding-bottom: 10px;}*/
+#project-todos ul.root { padding: 0; margin: 0px 0px 2px 0px; }
+#project-todos ul.root li { padding: 0; }
+#project-todos ul.root ul.children { padding: 0; margin: 0px 0px 1px 20px; }
+#project-todos ul.root ul.children li { padding: 0;}
+#project-todos div.children { padding: 0;}
 
-span.todo-has-children-true {text-decoration: underline; }
+span.todo-has-children-true { /* text-decoration: underline; */ }
 
 /* #project-todos ul.depth0 { background-color: #cecece;} */
 
 div.new-todo { 
-	background-color: #ffe2a9;
-	border: 1px solid grey;
 	padding: 3px;
 	width: 500px;
-	margin-left: 40px;
-	margin-top: 5px;
-	margin-bottom: 20px;
+	margin: 0px 0px 10px 0px;
+	font-size: 0.8em;
+	background: none repeat scroll 0 0 #FFFFDD;
+    	border: 1px solid #DDDDDD;
+        border-radius: 5px 5px 5px 5px;
 }
-div.new-todo  { font-size: 0.8em}
 .new-todo-date-cancel {  position: relative; top: 0.6em; left: -0.2em; }
 
+.todo-text-label {
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+}
 
+#project-todos ul.todos li ul.todos li span.todo-content span.text div.todo-text-label {
+        width: 380px;
+}
+
+.todo-due-label {
+	display: inline-block;
+	width: 65px;
+}
 #project-todos li {
 	text-align: middle;
 	vertical-align: middle;
-	margin: 0 0 0 0;
+	margin: 0;
+	padding: 0;
 }
-/*#project-todos img {
+/*
+#project-todos img {
 	position: relative;
 	top: 2px;
 	max-height: 14px;
 }*/
 
 .todo-controls {
-	margin-left: 0px;
+	margin: 0px;
 	text-decoration: none;
 }
 .todo-controls img, .todo-controls a {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
+	margin: 0;
+	padding: 0;
 	vertical-align:middle;
 
 }
 .todos .date {
-	font-weight: bold;
+/*	font-weight: bold;
 	font-size: 0.8em;
 	font-family: Arial;
-	padding-right: 2px;
+	padding-right: 2px; */
 }
 .done  {	text-decoration: line-through; }
 .todos .due {}
@@ -73,15 +96,16 @@ div.new-todo  { font-size: 0.8em}
   min-height: 6.2em;
 }
 
-div#issue-todos .todo { padding: 4px;}
-div#issue-todos .todo { border-bottom: 1px solid #ddd; }
-div#issue-todos p { margin-top: 0; margin-bottom: 1em;}
-div#issue-todos #project-todos ul.root { padding-left: 0px;}
-div#issue-todos #project-todos span.notes { color: #888888; font-size: 0.8em; font-style: normal;}
-div#issue-todos #project-todos span.notes span.refers { display: none;}
+#issue-todos .todo { padding: 0px; /* 4px */ }
+#issue-todos .todo { border-bottom: 1px solid #ddd; }
+#issue-todos p { margin-top: 0; margin-bottom: 0; /* 1em; */ }
+#issue-todos #project-todos ul.root { padding-left: 0px;}
+#issue-todos #project-todos span.notes { color: #888888; font-size: 0.8em; font-style: normal;}
+#issue-todos #project-todos span.notes span.refers { display: none;}
 
 #project-todos li .todo-content p{ display: inline;}
 li .todo-content .text form div{ display: none;}
+.todo-content { padding-left: 5px; }
 
 #project-todos li .todo-content span.flash.error, div.new-todo span.flash.error {
     background: transparent url(/images/false.png) no-repeat scroll 0px -2px;
@@ -104,5 +128,5 @@ dt.todo {
 .clearer {}
 .todos-edit form { display: inline; }
 
-
+a.todo-edit-link { color: black; cursor: text; border-bottom: 1px gray dotted; text-decoration: none; }
 

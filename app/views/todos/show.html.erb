@@ -3,7 +3,7 @@
     <%= stylesheet_link_tag 'todos_print', :plugin => 'redmine_todos_plugin', :media => 'print' %>
 <% end %>
 
-<div id=project-todos>
+<div id=project-todos class=allprojects>
   <%= render :partial => 'todos/link_bar' %>
     <h2><%= l(:label_todo_plural) %></h2>
     <ul class="todos root" id="<%= TodosController::UL_ID + 'rootnot-editable' %>">

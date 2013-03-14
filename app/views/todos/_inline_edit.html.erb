@@ -3,9 +3,9 @@
 <div>
   <div class='todos-edit'>
     <% remote_form_for([todo.todoable,todo], :html => {:class => 'inline'}) do |f| %>
-      <%= f.text_field :text %>
+      <%= f.text_field :text, :size => 60 %>
       Due:
-      <%= f.text_field :due, :size => 8 %>
+      <%= f.text_field :due, :size => 10 %>
       <%= calendar_for :todo_due %>
       <% if todo.todoable.is_a? Project %>
         <%= f.select :assigned_to_id, todo.todoable.users.collect{|m| [m.name,m.id]},

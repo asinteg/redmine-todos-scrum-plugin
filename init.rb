@@ -32,9 +32,9 @@ end
 
 Redmine::Plugin.register :redmine_todos_plugin do
   name 'Redmine Todo Lists plugin'
-  author 'David Lyons'
+  author 'David Lyons, Christian Daehn'
   description 'A plugin to create and manage agile-esque todo lists on a per project basis.'
-  version '0.0.4.3'
+  version '0.0.5.0'
   
 
   settings :default => {

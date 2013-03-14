@@ -8,13 +8,31 @@ Currently has translations for Russian, Chinese, Spanish, Italian, French, Germa
 Please check the issues page(thanks Mischa!) for current known bugs.
 
 = News
-* polish, brazilian portugese locales added, misc lang fixes for other locales.
-* Redmine 0.9.x - Please let me know if this plugin dosent work for you on redmine 0.9.x. I tested it on a clean 0.9.1 redmine, and it worked fine - let me know if you have any issues.
-* Redmine 0.8.x - There appear to be some issues with 0.8.x even with rails >= 2.2.1. If upgrading to 0.9.x is not an option, please let me know and ill try to fix it for 0.8.x.
+* forked version 0.0.4.3 to add some new features and support for ChiliProject 3.x
+* made the layout more compact and better to read especially for many tasks
+* added drag and drop support to sort tasks (still a bit buggy - working on it)
+
+== Known problems
+Currently not all features are available for ChiliProject users!
+
+This Redmine plugin is not compatible to the ChiliProject activity list any more - enabling the activity display of tasks will lead to internal errors / crash of ChiliProject!
+
+When sorting items by dragging and dropping sometimes the edit input field for the task text opens on mour button release. This issue can be work around by moving the mouse away from the task title while dragging... I'll try to fix that as soon as possible.
 
 = Requirements
 * Redmine 0.8.5 or later (may work on earlier versions, but not tested for it) - Works best on 0.9.x
 * Rails 2.2.1 or greater (NOTE - if you are on 0.8.x, you will have to manually install a newer rails version & edit your config/enviroment.rb)
+
+== Release 0.0.5.0
+* improved compatibility to ChiliProject 3.x (tested with 3.7)
+* added more drag and drop features
+* added automatic/floating multiple column layout
+* improved display of tasks
+
+== Release 0.0.4.3 -> FORKED VERSION
+* polish, brazilian portugese locales added, misc lang fixes for other locales.
+* Redmine 0.9.x - Please let me know if this plugin dosent work for you on redmine 0.9.x. I tested it on a clean 0.9.1 redmine, and it worked fine - let me know if you have any issues.
+* Redmine 0.8.x - There appear to be some issues with 0.8.x even with rails >= 2.2.1. If upgrading to 0.9.x is not an option, please let me know and ill try to fix it for 0.8.x.
 
 == Release 0.0.4.x
 * (0.0.4.1)Fixed bug where you couldnt add a child todo on the Issue screen(oops!!).

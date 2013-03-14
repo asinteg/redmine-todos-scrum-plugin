@@ -1,13 +1,13 @@
 #language file for de - post rails 2.2.2
 de:
   label_todo_plural: Anstehende Aufgaben
-  my_todos_title: Meine anstehenden Aufgaben
+  my_todos_title: Meine Aufgaben
 
   todo_sort_no_project_error: "Ohne Projekt kann nicht sortiert werden!"
   todo_project_not_found_error: "Projekt nicht gefunden!"
   todo_new_missing_update_target_error: "Sie benötigen ein update_target!"
 
-  mytodos_heading: Meine anstehenden Aufgaben
+  mytodos_heading: Meine Aufgaben
   mytodos_edit_project_tooltip: "Anstehende Aufgaben für dieses Projekt bearbeiten"
 
   todo_new_done_link: Hinzufügen von Aufgaben beenden
@@ -27,7 +27,7 @@ de:
 
   todo_due_label: "Fällig am:"
   todo_assigned_label: "Zugewiesen an:"
-  todo_ref_label: "Bezug:"
+  todo_ref_label: "siehe:"
 
   project_module_todo_lists: Liste anstehender Aufgaben
 
